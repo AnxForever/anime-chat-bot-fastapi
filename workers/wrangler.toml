@@ -1,0 +1,29 @@
+name = "anime-chat-bot"
+main = "src/main.py"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["python_workers"]
+
+[env.production]
+name = "anime-chat-bot"
+
+[env.staging]
+name = "anime-chat-bot-staging"
+
+# 环境变量配置
+[vars]
+APP_ENV = "production"
+APP_NAME = "动漫角色聊天机器人"
+API_VERSION = "v1"
+CORS_ORIGINS = "*"
+
+# 机密环境变量 (使用 wrangler secret put 命令设置)
+# GEMINI_API_KEY = "your_gemini_api_key_here"
+# DEEPSEEK_API_KEY = "your_deepseek_api_key_here"
+# JWT_SECRET_KEY = "your_jwt_secret_key_here"
+
+[build]
+command = ""
+
+# 资源限制 (免费计划不支持 CPU 限制)
+# [limits]
+# cpu_ms = 50 

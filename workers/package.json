@@ -1,0 +1,23 @@
+{
+  "name": "anime-chat-bot-workers",
+  "version": "1.0.0",
+  "description": "动漫角色聊天机器人 - Cloudflare Workers 部署版本",
+  "main": "src/main.py",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "wrangler dev --local"
+  },
+  "keywords": [
+    "anime",
+    "chatbot",
+    "cloudflare-workers",
+    "ai",
+    "llm"
+  ],
+  "author": "Anime Chat Bot Team",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+} 
