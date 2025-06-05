@@ -6,7 +6,7 @@ from fastapi.testclient import TestClient
 from unittest.mock import patch, AsyncMock
 import json
 
-from main import app
+from anime_chat_bot.app.main import app
 from app.models import Character, CharacterType, LLMProvider
 from app.models.character import Personality, BehaviorRules, LLMConfig, ContextConfig
 
